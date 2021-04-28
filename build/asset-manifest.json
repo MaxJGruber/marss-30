@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/static/css/main.774b6e12.chunk.css",
+    "main.js": "/static/js/main.c190a3bb.chunk.js",
+    "main.js.map": "/static/js/main.c190a3bb.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.f23192cc.js",
+    "runtime-main.js.map": "/static/js/runtime-main.f23192cc.js.map",
+    "static/js/2.56ba9e49.chunk.js": "/static/js/2.56ba9e49.chunk.js",
+    "static/js/2.56ba9e49.chunk.js.map": "/static/js/2.56ba9e49.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/main.774b6e12.chunk.css.map": "/static/css/main.774b6e12.chunk.css.map",
+    "static/js/2.56ba9e49.chunk.js.LICENSE.txt": "/static/js/2.56ba9e49.chunk.js.LICENSE.txt",
+    "static/media/about_pic.b3d7ade2.jpeg": "/static/media/about_pic.b3d7ade2.jpeg",
+    "static/media/adult_cut.4089ca8d.jpeg": "/static/media/adult_cut.4089ca8d.jpeg",
+    "static/media/child_cut.5f3e6ea0.jpeg": "/static/media/child_cut.5f3e6ea0.jpeg",
+    "static/media/homepage_pic.873394e3.jpg": "/static/media/homepage_pic.873394e3.jpg",
+    "static/media/marss_logo.c153f82f.png": "/static/media/marss_logo.c153f82f.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.f23192cc.js",
+    "static/js/2.56ba9e49.chunk.js",
+    "static/css/main.774b6e12.chunk.css",
+    "static/js/main.c190a3bb.chunk.js"
+  ]
+}
