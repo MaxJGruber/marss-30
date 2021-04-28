@@ -6,9 +6,13 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        "light-blue": colors.lightBlue,
-        cyan: colors.cyan,
+        amber: colors.amber,
+        "light-red": colors.red,
       },
+    },
+    fontFamily: {
+      sans: ["Avenir", "sans-serif"],
+      serif: ["Avenir", "serif"],
     },
   },
   variants: {
