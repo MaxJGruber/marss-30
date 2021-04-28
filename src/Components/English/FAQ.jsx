@@ -1,6 +1,7 @@
 const faqs = [
   {
-    question: "What Covid-19 prevention/sanitary measures is the salon practicing?",
+    question:
+      "What Covid-19 prevention/sanitary measures is the salon practicing?",
     answer:
       "The staff wears masks at all times. The salon has sanitizer at the entrance for all guests. Due to the small size of the salon, a maximum of 2 people (excluding staff) can be permitted inside.",
   },
@@ -8,7 +9,6 @@ const faqs = [
     question: "Is the salon open on Sundays?",
     answer: "No, the salon is closed all day on Sundays & Mondays.",
   },
-  ,
   {
     question: "Can I get a haircut without an appointment?",
     answer:
