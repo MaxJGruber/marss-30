@@ -1,6 +1,6 @@
 import React from "react";
 import { CameraIcon } from "@heroicons/react/solid";
-import aboutPic from "../../Assets/about_pic.jpeg";
+import aboutPic from "../Assets/about_pic.jpeg";
 
 const Bio = () => {
   return (

@@ -1,53 +1,19 @@
 import { Fragment } from "react";
+import { NavLink } from "react-router-dom";
 import { Popover, Transition } from "@headlessui/react";
-import {
-  ChartBarIcon,
-  CursorClickIcon,
-  MenuIcon,
-  PhoneIcon,
-  ShieldCheckIcon,
-  ViewGridIcon,
-  XIcon,
-} from "@heroicons/react/outline";
+import { MenuIcon, PhoneIcon, XIcon } from "@heroicons/react/outline";
 import { ChevronDownIcon } from "@heroicons/react/solid";
-import introPic from "../../Assets/homepage_pic.jpg";
-import logo from "../../Assets/marss_logo.png";
-import goToSection from "../../GoToSection";
+import introPic from "../Assets/homepage_pic.jpg";
+import logo from "../Assets/marss_logo.png";
+import goToSection from "../GoToSection";
 
-const features = [
-  {
-    name: "Women",
-    href: "#services",
-    description:
-      "Get a better understanding of where your traffic is coming from.",
-    icon: ChartBarIcon,
-  },
-  {
-    name: "Men",
-    href: "#services",
-    description: "Speak directly to your customers in a more meaningful way.",
-    icon: CursorClickIcon,
-  },
-  {
-    name: "Children",
-    href: "#services",
-    description: "Your customers' data will be safe and secure.",
-    icon: ShieldCheckIcon,
-  },
-  {
-    name: "Hair Products",
-    href: "#services",
-    description: "Connect with third-party tools that you're already using.",
-    icon: ViewGridIcon,
-  },
-];
 const callsToAction = [{ name: "Contact Sales", href: "#", icon: PhoneIcon }];
 
 function classNames(...classes) {
   return classes.filter(Boolean).join(" ");
 }
 
-export default function Example() {
+export default function LandingPage(props) {
   return (
     <div className="relative bg-gray-50">
       <Popover className="relative bg-amber-50 shadow">
@@ -104,22 +70,25 @@ export default function Example() {
                           >
                             <div className="rounded-lg shadow-lg ring-1 ring-black ring-opacity-5 overflow-hidden">
                               <div className="relative grid gap-6 bg-white px-5 py-6 sm:gap-8 sm:p-8">
-                                {features.map((item) => (
-                                  <div
-                                    key={item.name}
-                                    onClick={() => goToSection(item.href)}
-                                    className="-m-3 p-3 flex items-center justify-center rounded-lg hover:bg-gray-50"
-                                  >
-                                    <div className="ml-4">
-                                      <p className="text-base font-medium text-gray-900">
-                                        {item.name}
-                                      </p>
-                                      <p className="mt-1 text-sm text-gray-500">
-                                        {item.description}
-                                      </p>
-                                    </div>
-                                  </div>
-                                ))}
+                                {props.landingPageContent.services &&
+                                  props.landingPageContent.services.map(
+                                    (item) => (
+                                      <div
+                                        key={item.name}
+                                        onClick={() => goToSection(item.href)}
+                                        className="-m-3 p-3 flex items-center justify-center rounded-lg hover:bg-gray-50"
+                                      >
+                                        <div className="ml-4">
+                                          <p className="text-base font-medium text-gray-900">
+                                            {item.name}
+                                          </p>
+                                          <p className="mt-1 text-sm text-gray-500">
+                                            {item.description}
+                                          </p>
+                                        </div>
+                                      </div>
+                                    )
+                                  )}
                               </div>
                               <div className="px-5 py-5 bg-gray-50 space-y-6 sm:flex justify-center sm:space-y-0 sm:space-x-10 sm:px-8">
                                 {callsToAction.map((item) => (
@@ -144,40 +113,43 @@ export default function Example() {
                     onClick={() => goToSection("#pricing")}
                     className="text-base font-medium text-gray-500 hover:text-gray-900"
                   >
-                    Pricing
+                    {props.landingPageContent.navlinks.pricing}
                   </div>
                   <div
                     onClick={() => goToSection("#pricing")}
                     className="text-base font-medium text-gray-500 hover:text-gray-900"
                   >
-                    Times & Location
+                    {props.landingPageContent.navlinks.timesLoca}
                   </div>
                   <div
                     onClick={() => goToSection("#bio")}
                     className="text-base font-medium text-gray-500 hover:text-gray-900"
                   >
-                    Bio
+                    {props.landingPageContent.navlinks.bio}
                   </div>
                   <div
                     onClick={() => goToSection("#faq")}
                     className="text-base font-medium text-gray-500 hover:text-gray-900"
                   >
-                    F.A.Q
+                    {props.landingPageContent.navlinks.faq}
                   </div>
                   <div
                     onClick={() => goToSection("#gallery")}
                     className="text-base font-medium text-gray-500 hover:text-gray-900"
                   >
-                    Photo Gallery
+                    {props.landingPageContent.navlinks.gallery}
                   </div>
                 </Popover.Group>
                 <div className="hidden md:flex items-center justify-end md:flex-1 lg:w-0">
                   <div className="ml-8 whitespace-nowrap inline-flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-amber-600 hover:bg-amber-700">
                     English
                   </div>
-                  <div className="ml-2 whitespace-nowrap inline-flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-amber-600 hover:bg-amber-700">
+                  <NavLink
+                    to="/fr"
+                    className="ml-2 whitespace-nowrap inline-flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-amber-600 hover:bg-amber-700"
+                  >
                     Français
-                  </div>
+                  </NavLink>
                 </div>
               </div>
             </div>
@@ -216,17 +188,18 @@ export default function Example() {
                     </div>
                     <div className="mt-6">
                       <nav className="grid gap-y-8">
-                        {features.map((item) => (
-                          <div
-                            key={item.name}
-                            onClick={() => goToSection(item.href)}
-                            className="-m-3 p-3 flex items-center rounded-md hover:bg-gray-50"
-                          >
-                            <span className="ml-3 text-base font-medium text-gray-900">
-                              {item.name}
-                            </span>
-                          </div>
-                        ))}
+                        {props.landingPageContent.services &&
+                          props.landingPageContent.services.map((item) => (
+                            <div
+                              key={item.name}
+                              onClick={() => goToSection(item.href)}
+                              className="-m-3 p-3 flex items-center rounded-md hover:bg-gray-50"
+                            >
+                              <span className="ml-3 text-base font-medium text-gray-900">
+                                {item.name}
+                              </span>
+                            </div>
+                          ))}
                       </nav>
                     </div>
                   </div>
@@ -236,31 +209,31 @@ export default function Example() {
                         onClick={() => goToSection("#pricing")}
                         className="text-base font-medium text-gray-500 hover:text-gray-900"
                       >
-                        Pricing
+                        {props.landingPageContent.navlinks.pricing}
                       </div>
                       <div
                         onClick={() => goToSection("#pricing")}
                         className="text-base font-medium text-gray-500 hover:text-gray-900"
                       >
-                        Times & Location
+                        {props.landingPageContent.navlinks.timesLoca}
                       </div>
                       <div
                         onClick={() => goToSection("#bio")}
                         className="text-base font-medium text-gray-500 hover:text-gray-900"
                       >
-                        Bio
+                        {props.landingPageContent.navlinks.bio}
                       </div>
                       <div
                         onClick={() => goToSection("#faq")}
                         className="text-base font-medium text-gray-500 hover:text-gray-900"
                       >
-                        F.A.Q
+                        {props.landingPageContent.navlinks.faq}
                       </div>
                       <div
                         onClick={() => goToSection("#gallery")}
                         className="text-base font-medium text-gray-500 hover:text-gray-900"
                       >
-                        Photo Gallery
+                        {props.landingPageContent.navlinks.gallery}
                       </div>
                     </div>
                   </div>
@@ -276,15 +249,18 @@ export default function Example() {
           <div className="px-4 lg:w-1/2 sm:px-8 xl:pr-16">
             <h1 className="text-4xl tracking-tight font-extrabold text-gray-900 sm:text-5xl md:text-6xl lg:text-5xl xl:text-7xl">
               <span className="block xl:inline">
-                Enjoy the South-West of France
+                {props.landingPageContent.taglinePart1}
               </span>{" "}
-              <span className="block text-amber-600 xl:inline">in style!</span>
+              <span className="block text-amber-600 xl:inline">
+                {props.landingPageContent.taglinePart2}
+              </span>
             </h1>
             <p className="mt-3 max-w-md mx-auto text-xl text-gray-500 sm:text-2xl md:mt-5 md:max-w-3xl pre-formatted">
-              From a trim to a hair-dye, Martial Beaugrand makes sure you get
-              the hairstyle that YOU deserve.{"\n\n"} Located at Allemans du
-              Dropt, Marss N°30 is open 4 and half days a week to take care of
-              your hair.
+              {props.landingPageContent.introPart1}
+            </p>
+            <p className="mt-3 max-w-md mx-auto text-xl text-gray-500 sm:text-2xl md:mt-5 md:max-w-3xl pre-formatted">
+              {" "}
+              {props.landingPageContent.introPart2}
             </p>
             <div className="mt-10 sm:flex sm:justify-center lg:justify-start">
               <div className="rounded-md shadow">
@@ -292,7 +268,7 @@ export default function Example() {
                   href="tel:05 53 88 68 35"
                   className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-amber-600 hover:bg-amber-700 md:py-4 md:text-lg md:px-10"
                 >
-                  Call Now
+                  {props.landingPageContent.button1}
                 </a>
               </div>
               <div className="mt-3 rounded-md shadow sm:mt-0 sm:ml-3">
@@ -302,7 +278,7 @@ export default function Example() {
                   rel="noreferrer"
                   className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-amber-600 bg-white hover:bg-gray-50 md:py-4 md:text-lg md:px-10"
                 >
-                  Get Directions
+                  {props.landingPageContent.button2}
                 </a>
               </div>
             </div>

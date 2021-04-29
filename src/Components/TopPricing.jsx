@@ -1,50 +1,19 @@
 import { CheckIcon } from "@heroicons/react/solid";
 
-const tiers = [
-  {
-    name: "Child's Haircut (4-11 y.o)",
-    href: "#",
-    priceMonthly: 15,
-    description: "Don't look like Justin Bieber anymore!",
-    includedFeatures: ["Hairwash.", "Haircut.", "Hair Care."],
-  },
-  {
-    name: "Men's Basic Haircut",
-    href: "#",
-    priceMonthly: 19,
-    description: "All the basics needed for a refreshed look",
-    includedFeatures: ["Hairwash.", "Haircut.", "Hair Care."],
-  },
-  {
-    name: "Woman's Basic Haircut",
-    href: "#",
-    priceMonthly: 37,
-    description: "Simple, elegant & youthful don't need to be words of past",
-    includedFeatures: ["Hairwash.", "Haircut.", "Hair Care."],
-  },
-  {
-    name: "Woman's Haircut & Dye",
-    href: "#",
-    priceMonthly: 66,
-    description: "New look, new you. Add some color to your life.",
-    includedFeatures: ["Hairwash.", "Haircut.", "Hair Care.", "Hair Dye"],
-  },
-];
-
-export default function Example() {
+export default function TopPricing(props) {
   return (
     <div className="bg-white">
       <div className="max-w-7xl mx-auto py-24 px-4 sm:px-6 lg:px-8">
         <div className="sm:flex sm:flex-col sm:align-center">
           <h1 className="text-5xl font-extrabold text-gray-900 sm:text-center">
-            Bestsellers
+            {props.topPricingContent.headline}
           </h1>
           <p className="mt-5 text-xl text-gray-500 sm:text-center">
-            Check out the most recommended services at Martial's Salon
+            {props.topPricingContent.intro}
           </p>
         </div>
         <div className="mt-12 space-y-4 sm:mt-16 sm:space-y-0 sm:grid sm:grid-cols-2 sm:gap-6 lg:max-w-4xl lg:mx-auto xl:max-w-none xl:mx-0 xl:grid-cols-4">
-          {tiers.map((tier) => (
+          {props.topPricingContent.topPrices.map((tier) => (
             <div
               key={tier.name}
               className="border border-gray-200 rounded-lg shadow-sm divide-y divide-gray-200"
@@ -62,7 +31,7 @@ export default function Example() {
               </div>
               <div className="pt-6 pb-8 px-6">
                 <h3 className="text-xs font-medium text-gray-900 tracking-wide uppercase">
-                  What's included
+                  {props.topPricingContent.included}
                 </h3>
                 <ul className="mt-6 space-y-4">
                   {tier.includedFeatures.map((feature) => (
