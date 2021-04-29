@@ -27,6 +27,7 @@
   "scripts": {
     "start": "node server.js",
     "build": "craco build",
+    "dev": "craco start",
     "test": "craco test",
     "eject": "react-scripts eject"
   },

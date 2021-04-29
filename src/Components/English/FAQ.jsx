@@ -19,7 +19,7 @@ const faqs = [
 
 export default function Example() {
   return (
-    <div className="bg-white">
+    <div id="faq" className="bg-amber-50">
       <div className="max-w-7xl mx-auto py-16 px-4 sm:px-6 lg:py-20 lg:px-8">
         <div className="lg:grid lg:grid-cols-3 lg:gap-8">
           <div>
@@ -30,7 +30,7 @@ export default function Example() {
               Can’t find the answer you’re looking for? Call the salon directly
               at
               <a
-                href="#"
+                href="tel:05 53 88 68 35"
                 className="font-medium text-indigo-600 hover:text-indigo-500"
               >
                 {" "}

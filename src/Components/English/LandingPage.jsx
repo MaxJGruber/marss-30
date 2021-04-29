@@ -1,46 +1,42 @@
 import { Fragment } from "react";
 import { Popover, Transition } from "@headlessui/react";
 import {
-  BookmarkAltIcon,
-  CalendarIcon,
   ChartBarIcon,
   CursorClickIcon,
   MenuIcon,
   PhoneIcon,
-  PlayIcon,
-  RefreshIcon,
   ShieldCheckIcon,
-  SupportIcon,
   ViewGridIcon,
   XIcon,
 } from "@heroicons/react/outline";
 import { ChevronDownIcon } from "@heroicons/react/solid";
 import introPic from "../../Assets/homepage_pic.jpg";
 import logo from "../../Assets/marss_logo.png";
+import goToSection from "../../GoToSection";
 
 const features = [
   {
     name: "Women",
-    href: "#",
+    href: "#services",
     description:
       "Get a better understanding of where your traffic is coming from.",
     icon: ChartBarIcon,
   },
   {
     name: "Men",
-    href: "#",
+    href: "#services",
     description: "Speak directly to your customers in a more meaningful way.",
     icon: CursorClickIcon,
   },
   {
     name: "Children",
-    href: "#",
+    href: "#services",
     description: "Your customers' data will be safe and secure.",
     icon: ShieldCheckIcon,
   },
   {
     name: "Hair Products",
-    href: "#",
+    href: "#services",
     description: "Connect with third-party tools that you're already using.",
     icon: ViewGridIcon,
   },
@@ -54,13 +50,17 @@ function classNames(...classes) {
 export default function Example() {
   return (
     <div className="relative bg-gray-50">
-      <Popover className="relative bg-white shadow">
+      <Popover className="relative bg-amber-50 shadow">
         {({ open }) => (
           <>
             <div className="max-w-7xl mx-auto px-4 sm:px-6">
               <div className="flex justify-between items-center py-6 md:justify-start md:space-x-10">
                 <div className="flex justify-start lg:w-0 lg:flex-1">
-                  <img className="h-10 w-auto sm:h-12 rounded-md" src={logo} alt="logo" />
+                  <img
+                    className="h-10 w-auto sm:h-12 rounded-md"
+                    src={logo}
+                    alt="logo"
+                  />
                 </div>
                 <div className="-mr-2 -my-2 md:hidden">
                   <Popover.Button className="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500">
@@ -75,7 +75,7 @@ export default function Example() {
                         <Popover.Button
                           className={classNames(
                             open ? "text-gray-900" : "text-gray-500",
-                            "group bg-white rounded-md inline-flex items-center text-base font-medium hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+                            "group bg-amber rounded-md inline-flex items-center text-base font-medium hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
                           )}
                         >
                           <span>Services</span>
@@ -105,9 +105,9 @@ export default function Example() {
                             <div className="rounded-lg shadow-lg ring-1 ring-black ring-opacity-5 overflow-hidden">
                               <div className="relative grid gap-6 bg-white px-5 py-6 sm:gap-8 sm:p-8">
                                 {features.map((item) => (
-                                  <a
+                                  <div
                                     key={item.name}
-                                    href={item.href}
+                                    onClick={() => goToSection(item.href)}
                                     className="-m-3 p-3 flex items-center justify-center rounded-lg hover:bg-gray-50"
                                   >
                                     <div className="ml-4">
@@ -118,18 +118,18 @@ export default function Example() {
                                         {item.description}
                                       </p>
                                     </div>
-                                  </a>
+                                  </div>
                                 ))}
                               </div>
                               <div className="px-5 py-5 bg-gray-50 space-y-6 sm:flex justify-center sm:space-y-0 sm:space-x-10 sm:px-8">
                                 {callsToAction.map((item) => (
                                   <div key={item.name} className="flow-root">
-                                    <a
+                                    <div
                                       href={item.href}
                                       className="-m-3 p-3 flex items-center rounded-md text-base font-medium text-gray-900 hover:bg-gray-100"
                                     >
                                       <span className="ml-3">{item.name}</span>
-                                    </a>
+                                    </div>
                                   </div>
                                 ))}
                               </div>
@@ -140,36 +140,36 @@ export default function Example() {
                     )}
                   </Popover>
 
-                  <a
-                    href="#"
+                  <div
+                    onClick={() => goToSection("#pricing")}
                     className="text-base font-medium text-gray-500 hover:text-gray-900"
                   >
                     Pricing
-                  </a>
-                  <a
-                    href="#"
+                  </div>
+                  <div
+                    onClick={() => goToSection("#pricing")}
                     className="text-base font-medium text-gray-500 hover:text-gray-900"
                   >
                     Times & Location
-                  </a>
-                  <a
-                    href="#"
+                  </div>
+                  <div
+                    onClick={() => goToSection("#bio")}
                     className="text-base font-medium text-gray-500 hover:text-gray-900"
                   >
                     Bio
-                  </a>
-                  <a
-                    href="#"
+                  </div>
+                  <div
+                    onClick={() => goToSection("#faq")}
                     className="text-base font-medium text-gray-500 hover:text-gray-900"
                   >
                     F.A.Q
-                  </a>
-                  <a
-                    href="#"
+                  </div>
+                  <div
+                    onClick={() => goToSection("#gallery")}
                     className="text-base font-medium text-gray-500 hover:text-gray-900"
                   >
                     Photo Gallery
-                  </a>
+                  </div>
                 </Popover.Group>
                 <div className="hidden md:flex items-center justify-end md:flex-1 lg:w-0">
                   <div className="ml-8 whitespace-nowrap inline-flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-amber-600 hover:bg-amber-700">
@@ -217,38 +217,51 @@ export default function Example() {
                     <div className="mt-6">
                       <nav className="grid gap-y-8">
                         {features.map((item) => (
-                          <a
+                          <div
                             key={item.name}
-                            href={item.href}
+                            onClick={() => goToSection(item.href)}
                             className="-m-3 p-3 flex items-center rounded-md hover:bg-gray-50"
                           >
-                            <item.icon
-                              className="flex-shrink-0 h-6 w-6 text-indigo-600"
-                              aria-hidden="true"
-                            />
                             <span className="ml-3 text-base font-medium text-gray-900">
                               {item.name}
                             </span>
-                          </a>
+                          </div>
                         ))}
                       </nav>
                     </div>
                   </div>
                   <div className="py-6 px-5 space-y-6">
                     <div className="grid grid-cols-2 gap-y-4 gap-x-8">
-                      <a
-                        href="#"
-                        className="text-base font-medium text-gray-900 hover:text-gray-700"
+                      <div
+                        onClick={() => goToSection("#pricing")}
+                        className="text-base font-medium text-gray-500 hover:text-gray-900"
                       >
                         Pricing
-                      </a>
-
-                      <a
-                        href="#"
-                        className="text-base font-medium text-gray-900 hover:text-gray-700"
+                      </div>
+                      <div
+                        onClick={() => goToSection("#pricing")}
+                        className="text-base font-medium text-gray-500 hover:text-gray-900"
                       >
-                        Docs
-                      </a>
+                        Times & Location
+                      </div>
+                      <div
+                        onClick={() => goToSection("#bio")}
+                        className="text-base font-medium text-gray-500 hover:text-gray-900"
+                      >
+                        Bio
+                      </div>
+                      <div
+                        onClick={() => goToSection("#faq")}
+                        className="text-base font-medium text-gray-500 hover:text-gray-900"
+                      >
+                        F.A.Q
+                      </div>
+                      <div
+                        onClick={() => goToSection("#gallery")}
+                        className="text-base font-medium text-gray-500 hover:text-gray-900"
+                      >
+                        Photo Gallery
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -276,7 +289,7 @@ export default function Example() {
             <div className="mt-10 sm:flex sm:justify-center lg:justify-start">
               <div className="rounded-md shadow">
                 <a
-                  href="#"
+                  href="tel:05 53 88 68 35"
                   className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-amber-600 hover:bg-amber-700 md:py-4 md:text-lg md:px-10"
                 >
                   Call Now
@@ -284,7 +297,9 @@ export default function Example() {
               </div>
               <div className="mt-3 rounded-md shadow sm:mt-0 sm:ml-3">
                 <a
-                  href="#"
+                  href="https://www.google.fr/maps/place/30+Avenue+de+Miramont,+47800+Allemans-du-Dropt/@44.6277956,0.2895088,17z/data=!3m1!4b1!4m5!3m4!1s0x12aa94a8f144786b:0x3d55a626d8c6d00f!8m2!3d44.6277918!4d0.2916975"
+                  target="_blank"
+                  rel="noreferrer"
                   className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-amber-600 bg-white hover:bg-gray-50 md:py-4 md:text-lg md:px-10"
                 >
                   Get Directions

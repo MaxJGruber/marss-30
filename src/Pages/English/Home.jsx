@@ -4,6 +4,7 @@ import TopPricing from "../../Components/English/TopPricing";
 import FAQ from "../../Components/English/FAQ";
 import Bio from "../../Components/English/Bio";
 import Services from "../../Components/English/Services";
+import PhotoGallery from "../../Components/English/PhotoGallery";
 const Home = () => {
   return (
     <div>
@@ -11,6 +12,7 @@ const Home = () => {
       <Services />
       <TopPricing />
       <Bio />
+      <PhotoGallery />
       <FAQ />
     </div>
   );
