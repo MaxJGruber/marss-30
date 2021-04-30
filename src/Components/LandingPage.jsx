@@ -9,7 +9,7 @@ import goToSection from "../GoToSection";
 
 export default function LandingPage(props) {
   return (
-    <div className="relative bg-logo-white">
+    <div id="landingpage" className="relative bg-white">
       <Popover className="relative bg-logo-dark shadow">
         {({ open }) => (
           <>
@@ -31,38 +31,38 @@ export default function LandingPage(props) {
                 <Popover.Group as="nav" className="hidden md:flex space-x-10">
                   <div
                     onClick={() => goToSection("#services")}
-                    className="text-base font-medium text-logo-white "
+                    className="text-base font-medium text-logo-white cursor-pointer"
                   >
                     {props.landingPageContent.navlinks.services}
                   </div>
 
                   <div
                     onClick={() => goToSection("#pricing")}
-                    className="text-base font-medium text-logo-white "
+                    className="text-base font-medium text-logo-white cursor-pointer"
                   >
                     {props.landingPageContent.navlinks.pricing}
                   </div>
                   <div
                     onClick={() => goToSection("#pricing")}
-                    className="text-base font-medium text-logo-white"
+                    className="text-base font-medium text-logo-white cursor-pointer"
                   >
                     {props.landingPageContent.navlinks.timesLoca}
                   </div>
                   <div
                     onClick={() => goToSection("#bio")}
-                    className="text-base font-medium text-logo-white"
+                    className="text-base font-medium text-logo-white cursor-pointer"
                   >
                     {props.landingPageContent.navlinks.bio}
                   </div>
                   <div
                     onClick={() => goToSection("#faq")}
-                    className="text-base font-medium text-logo-white"
+                    className="text-base font-medium text-logo-white cursor-pointer"
                   >
                     {props.landingPageContent.navlinks.faq}
                   </div>
                   <div
                     onClick={() => goToSection("#gallery")}
-                    className="text-base font-medium text-logo-white"
+                    className="text-base font-medium text-logo-white cursor-pointer"
                   >
                     {props.landingPageContent.navlinks.gallery}
                   </div>
@@ -143,7 +143,7 @@ export default function LandingPage(props) {
                         {props.landingPageContent.navlinks.pricing}
                       </div>
                       <div
-                        onClick={() => goToSection("#pricing")}
+                        onClick={() => goToSection("#times")}
                         className="text-base font-medium text-gray-500 hover:text-gray-900"
                       >
                         {props.landingPageContent.navlinks.timesLoca}

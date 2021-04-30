@@ -1,9 +1,10 @@
+import goToSection from "../GoToSection";
 const navigation = {
   main: [
-    { name: "Home", href: "#" },
-    { name: "Pricing", href: "#" },
-    { name: "Bio", href: "#" },
-    { name: "Photo Gallery", href: "#" },
+    { name: "Home", href: "#landingpage" },
+    { name: "Pricing", href: "#pricing" },
+    { name: "Bio", href: "#bio" },
+    { name: "Photo Gallery", href: "#gallery" },
   ],
   social: [
     {
@@ -32,12 +33,12 @@ export default function Footer() {
         >
           {navigation.main.map((item) => (
             <div key={item.name} className="px-5 py-2">
-              <a
-                href={item.href}
-                className="text-base text-logo-white hover:text-gray-900"
+              <div
+                onClick={() => goToSection(item.href)}
+                className="text-base text-logo-white hover:text-gray-900 cursor-pointer"
               >
                 {item.name}
-              </a>
+              </div>
             </div>
           ))}
         </nav>

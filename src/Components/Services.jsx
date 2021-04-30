@@ -3,7 +3,7 @@ import childCut from "../Assets/child_cut.jpeg";
 
 export default function Services(props) {
   return (
-    <div id="services" className="py-16 bg-logo-white overflow-hidden lg:py-24">
+    <div id="services" className="py-16 bg-white overflow-hidden lg:py-24">
       <div className="relative max-w-xl mx-auto px-4 sm:px-6 lg:px-8 lg:max-w-7xl">
         <svg
           className="hidden lg:block absolute left-full transform -translate-x-1/2 -translate-y-1/4"
@@ -28,7 +28,7 @@ export default function Services(props) {
                 width={4}
                 height={4}
                 className="text-gray-200"
-                fill="currentColor"
+                fill="#ff914d"
               />
             </pattern>
           </defs>
@@ -90,7 +90,7 @@ export default function Services(props) {
                     width={4}
                     height={4}
                     className="text-gray-200"
-                    fill="currentColor"
+                    fill="#ff914d"
                   />
                 </pattern>
               </defs>
@@ -132,7 +132,7 @@ export default function Services(props) {
                 width={4}
                 height={4}
                 className="text-gray-200"
-                fill="currentColor"
+                fill="#ff914d"
               />
             </pattern>
           </defs>

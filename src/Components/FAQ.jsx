@@ -17,9 +17,9 @@ const faqs = [
   // More questions...
 ];
 
-export default function Example() {
+export default function Faq() {
   return (
-    <div id="faq" className="bg-amber-50">
+    <div id="faq" className="bg-white">
       <div className="max-w-7xl mx-auto py-16 px-4 sm:px-6 lg:py-20 lg:px-8">
         <div className="lg:grid lg:grid-cols-3 lg:gap-8">
           <div>
