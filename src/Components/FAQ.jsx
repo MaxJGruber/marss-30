@@ -31,7 +31,7 @@ export default function Example() {
               at
               <a
                 href="tel:05 53 88 68 35"
-                className="font-medium text-indigo-600 hover:text-indigo-500"
+                className="font-medium text-logo-amber hover:text-amber-700"
               >
                 {" "}
                 0033 (0) 5 53 88 68 35

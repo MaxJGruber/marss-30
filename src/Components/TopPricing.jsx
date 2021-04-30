@@ -5,7 +5,7 @@ export default function TopPricing(props) {
     <div className="bg-white">
       <div className="max-w-7xl mx-auto py-24 px-4 sm:px-6 lg:px-8">
         <div className="sm:flex sm:flex-col sm:align-center">
-          <h1 className="text-5xl font-extrabold text-gray-900 sm:text-center">
+          <h1 className="text-5xl font-extrabold text-logo-amber sm:text-center">
             {props.topPricingContent.headline}
           </h1>
           <p className="mt-5 text-xl text-gray-500 sm:text-center">

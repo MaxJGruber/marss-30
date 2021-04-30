@@ -3,7 +3,7 @@ import childCut from "../Assets/child_cut.jpeg";
 
 export default function Services(props) {
   return (
-    <div id="services" className="py-16 bg-amber-50 overflow-hidden lg:py-24">
+    <div id="services" className="py-16 bg-logo-white overflow-hidden lg:py-24">
       <div className="relative max-w-xl mx-auto px-4 sm:px-6 lg:px-8 lg:max-w-7xl">
         <svg
           className="hidden lg:block absolute left-full transform -translate-x-1/2 -translate-y-1/4"
@@ -40,7 +40,7 @@ export default function Services(props) {
         </svg>
 
         <div className="relative">
-          <h2 className="text-center text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">
+          <h2 className="text-center text-3xl leading-8 font-extrabold tracking-tight text-logo-amber sm:text-4xl">
             {props.servicesContent.headline}
           </h2>
           <p className="mt-4 max-w-3xl mx-auto text-center text-2xl text-gray-500">

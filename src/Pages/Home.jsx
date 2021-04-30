@@ -4,6 +4,7 @@ import TopPricing from "../Components/TopPricing";
 import FAQ from "../Components/FAQ";
 import Bio from "../Components/Bio";
 import Services from "../Components/Services";
+import ContactInfo from "../Components/ContactInfo";
 import PhotoGallery from "../Components/PhotoGallery";
 import Footer from "../Components/Footer";
 
@@ -22,6 +23,7 @@ const Home = (props) => {
         language={props.language}
         topPricingContent={props.topPricingContent}
       />
+      <ContactInfo />
       <Bio language={props.language} />
       <PhotoGallery
         language={props.language}

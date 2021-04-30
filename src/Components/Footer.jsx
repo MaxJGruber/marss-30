@@ -24,7 +24,7 @@ const navigation = {
 
 export default function Footer() {
   return (
-    <footer className="bg-white">
+    <footer className="bg-logo-dark">
       <div className="max-w-7xl mx-auto py-12 px-4 overflow-hidden sm:px-6 lg:px-8">
         <nav
           className="-mx-5 -my-2 flex flex-wrap justify-center"
@@ -34,7 +34,7 @@ export default function Footer() {
             <div key={item.name} className="px-5 py-2">
               <a
                 href={item.href}
-                className="text-base text-gray-500 hover:text-gray-900"
+                className="text-base text-logo-white hover:text-gray-900"
               >
                 {item.name}
               </a>
@@ -53,7 +53,7 @@ export default function Footer() {
             </a>
           ))}
         </div>
-        <p className="mt-8 text-center text-base text-gray-400">
+        <p className="mt-8 text-center text-base text-logo-white">
           &copy; 2021 by Max Gruber. All rights reserved.
         </p>
       </div>
