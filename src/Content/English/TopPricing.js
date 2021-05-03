@@ -1,6 +1,6 @@
 export const topPricingContentEN = {
   headline: "Bestsellers",
-  intro: "Check out the most recommended services at Martial's Salon",
+  intro: "Check out the most recommended services at Marss's Salon",
   included: "What's included",
   topPrices: [
     {

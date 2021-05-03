@@ -1,7 +1,7 @@
 export const photoGalleryContentEN = {
   headline: "Photo Gallery",
   intro:
-    "Check out Martial in action & some of the amazing hairstyles he created!",
+    "Check out Marss in action & some of the amazing hairstyles he created!",
   hook: `Don't forget to check out & "like" Marss N°30 on FaceBook`,
   social: [
     {

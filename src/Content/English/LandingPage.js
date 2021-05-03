@@ -33,9 +33,9 @@ export const landingPageContentEN = {
   taglinePart1: "Enjoy the South-West of France",
   taglinePart2: "in style!",
   introPart1:
-    "From a trim to a hair-dye, Martial Beaugrand makes sure you ge the hairstyle that YOU deserve.",
+    "From a trim to a hair-dye, Marss makes sure you ge the hairstyle that YOU deserve.",
   introPart2:
     "Located at Allemans du Dropt, Marss N°30 is open 5 days a week to take care of your hair.",
-  button1: "Call Now",
+  button1: "Call 05 53 88 68 35",
   button2: "Get Directions",
 };

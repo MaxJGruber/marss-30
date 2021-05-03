@@ -4,14 +4,16 @@ export const servicesContentFR = {
   part1: {
     title: "Un coiffeur avec de l'expérience",
     intro:
-      "Martial Beaugrand à plus de 40 d'expériences dans la coiffure. Dans son salon, il prend en charge de nombreux services tels que:",
-    list1: "les permanentes & couleurs",
-    list2: "du rafraîchissement aux grandes coupes",
-    list3: "les brushings et coiffure de fête",
+      "Marss a plus de 40 d'expériences dans la coiffure. Dans son salon, il prend en charge de nombreux services tels que:",
+    list: [
+      "les permanentes & couleurs",
+      "du rafraîchissement aux grandes coupes",
+      "les brushings et coiffure de fête",
+    ],
   },
   part2: {
     title: "Un coiffeur pour toute la famille",
     intro:
-      "D'une première coup jusqu'à peigner les derniers cheveux de la tête, les cheveux et les têtes sont de taille et forme différente. Dans son salon, Martial Beaugrand s'occupe de tous les membres de la famille pour que vous chacun puisse être sur son 31.",
+      "D'une première coupe jusqu'à peigner les derniers cheveux de la tête, les cheveux et les têtes sont de taille et forme différente. Dans son salon, Marss s'occupe de tous les membres de la famille pour que vous chacun puisse être sur son 31.",
   },
 };

@@ -1,6 +1,6 @@
 export const photoGalleryContentFR = {
   headline: "La galerie de photos",
-  intro: `Decouvrez en image Martial en action dans son salon pour
+  intro: `Decouvrez en image Marss en action dans son salon pour
     exercer différentes techniques et coupes.`,
   hook: `N'oubliez pas d'aller sur la page FaceBook de Marss N°30 et mettre un petit "j'aime"`,
   social: [

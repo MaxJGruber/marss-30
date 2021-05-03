@@ -3,8 +3,8 @@ import AppMap from "./Map";
 
 const ContactInfo = () => {
   return (
-    <div id="times" className="my-10 bg-white flex items-center flex-col">
-      <h2 className="mb-10 text-5xl font-extrabold text-logo-amber sm:text-center">
+    <div id="times" className="mt-20 bg-white flex items-center flex-col">
+      <h2 className="mb-5 text-5xl font-extrabold text-logo-amber sm:text-center">
         Times & Location
       </h2>
       <div className="w-full max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8 lg:flex lg:items-center lg:justify-between">

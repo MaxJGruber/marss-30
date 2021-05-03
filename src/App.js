@@ -1,4 +1,3 @@
-
 import { Route, Switch } from "react-router-dom";
 import Home from "./Pages/Home.jsx";
 import { landingPageContentEN } from "./Content/English/LandingPage";
@@ -8,6 +7,7 @@ import { photoGalleryContentEN } from "./Content/English/PhotoGallery";
 import { landingPageContentFR } from "./Content/French/LandingPage";
 import { servicesContentFR } from "./Content/French/Services";
 import { topPricingContentFR } from "./Content/French/TopPricing";
+import { fullPriceListContentFR } from "./Content/French/FullPriceList";
 import { photoGalleryContentFR } from "./Content/French/PhotoGallery";
 
 function App() {
@@ -36,6 +36,7 @@ function App() {
               landingPageContent={landingPageContentFR}
               servicesContent={servicesContentFR}
               topPricingContent={topPricingContentFR}
+              fullPriceListContent={fullPriceListContentFR}
               photoGalleryContent={photoGalleryContentFR}
             />
           )}

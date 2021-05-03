@@ -33,9 +33,9 @@ export const landingPageContentFR = {
   taglinePart1: "La Nouvelle-Aquitaine vous attends...",
   taglinePart2: "Vos cheveux aussi!",
   introPart1:
-    "D'un simple rafraîchissement à une couleur, Martial Beaugrand s'assure que vous aurez la coupe de cheveux que vous méritez.",
+    "D'un simple rafraîchissement à une couleur, Marss s'assure que vous aurez la coupe de cheveux que vous méritez.",
   introPart2:
     "Situé à Allemans du Dropt, Marss N°30 est ouvert 5 jours par semaines pour s'occuper de vos cheveux.",
-  button1: "Appelez Maintenant",
-  button2: "Plannifiez votre itinéraire",
+  button1: "Appelez 05 53 88 68 35",
+  button2: "Votre itinéraire",
 };

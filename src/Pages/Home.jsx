@@ -1,6 +1,7 @@
 import React from "react";
 import LandingPage from "../Components/LandingPage";
 import TopPricing from "../Components/TopPricing";
+import FullPriceList from "../Components/FullPriceList";
 import FAQ from "../Components/FAQ";
 import Bio from "../Components/Bio";
 import Services from "../Components/Services";
@@ -23,6 +24,7 @@ const Home = (props) => {
         language={props.language}
         topPricingContent={props.topPricingContent}
       />
+      <FullPriceList fullPriceListContent={props.fullPriceListContent} />
       <ContactInfo />
       <Bio language={props.language} />
       <PhotoGallery

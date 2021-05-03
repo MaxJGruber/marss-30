@@ -3,6 +3,7 @@ import photo2 from "../Assets/PhotoGallery_Pics/photo2.jpeg";
 import photo3 from "../Assets/PhotoGallery_Pics/photo3.jpeg";
 import photo4 from "../Assets/PhotoGallery_Pics/photo4.jpeg";
 import photo5 from "../Assets/PhotoGallery_Pics/photo5.jpeg";
+import photo6 from "../Assets/PhotoGallery_Pics/photo6.jpeg";
 
 const images = [
   {
@@ -24,6 +25,10 @@ const images = [
   {
     index: 5,
     imageUrl: photo5,
+  },
+  {
+    index: 6,
+    imageUrl: photo6,
   },
   // More people...
 ];

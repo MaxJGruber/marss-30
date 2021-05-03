@@ -56,15 +56,17 @@ export default function Services(props) {
             <p className="mt-3 text-xl text-gray-500">
               {props.servicesContent.part1.intro}
             </p>
-            <p className="mt-3 text-xl text-gray-500">
-              -{props.servicesContent.part1.list1}
-            </p>
-            <p className="mt-3 text-xl text-gray-500">
-              -{props.servicesContent.part1.list2}
-            </p>
-            <p className="mt-3 text-xl text-gray-500">
-              -{props.servicesContent.part1.list3}
-            </p>
+            <dl className="mt-10 space-y-10">
+              {props.servicesContent.part1.list.map((item) => (
+                <div key={item.id} className="relative">
+                  <dt>
+                    <p className="text-lg leading-6 font-medium text-logo-amber">
+                      {item}
+                    </p>
+                  </dt>
+                </div>
+              ))}
+            </dl>
           </div>
 
           <div className="mt-10 -mx-4 relative lg:mt-0" aria-hidden="true">
