@@ -1,6 +1,6 @@
-export const topPricingContentFR = {
-  headline: "Les meilleurs ventes",
-  intro: "Jetez un coup d'oeil aux recommendations chez Marss N°30",
+export const topPricingContent = {
+  headline: "Les meilleures ventes",
+  intro: "Jetez un coup d'oeil aux services recommendés chez Marss N°30",
   included: "Inclus",
   topPrices: [
     {

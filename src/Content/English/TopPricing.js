@@ -1,4 +1,4 @@
-export const topPricingContentEN = {
+export const topPricingContent = {
   headline: "Bestsellers",
   intro: "Check out the most recommended services at Marss's Salon",
   included: "What's included",

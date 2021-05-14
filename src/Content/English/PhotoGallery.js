@@ -1,4 +1,4 @@
-export const photoGalleryContentEN = {
+export const photoGalleryContent = {
   headline: "Photo Gallery",
   intro:
     "Check out Marss in action & some of the amazing hairstyles he created!",

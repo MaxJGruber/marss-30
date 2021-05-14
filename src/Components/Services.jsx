@@ -1,7 +1,8 @@
 import adultCut from "../Assets/adult_cut.jpeg";
 import childCut from "../Assets/child_cut.jpeg";
+import changeLanguage from "../redux/languageContent.js";
 
-export default function Services(props) {
+export default function Services() {
   return (
     <div id="services" className="py-16 bg-white overflow-hidden lg:py-24">
       <div className="relative max-w-xl mx-auto px-4 sm:px-6 lg:px-8 lg:max-w-7xl">
@@ -41,23 +42,23 @@ export default function Services(props) {
 
         <div className="relative">
           <h2 className="text-center text-3xl leading-8 font-extrabold tracking-tight text-logo-amber sm:text-4xl">
-            {props.servicesContent.headline}
+            {changeLanguage().servicesContent.headline}
           </h2>
           <p className="mt-4 max-w-3xl mx-auto text-center text-2xl text-gray-500">
-            {props.servicesContent.intro}
+            {changeLanguage().servicesContent.intro}
           </p>
         </div>
 
         <div className="relative mt-12 lg:mt-24 lg:grid lg:grid-cols-2 lg:gap-8 lg:items-center">
           <div className="relative">
             <h3 className="text-2xl font-extrabold text-gray-900 tracking-tight sm:text-3xl">
-              {props.servicesContent.part1.title}
+              {changeLanguage().servicesContent.part1.title}
             </h3>
             <p className="mt-3 text-xl text-gray-500">
-              {props.servicesContent.part1.intro}
+              {changeLanguage().servicesContent.part1.intro}
             </p>
             <dl className="mt-10 space-y-10">
-              {props.servicesContent.part1.list.map((item) => (
+              {changeLanguage().servicesContent.part1.list.map((item) => (
                 <div key={item.id} className="relative">
                   <dt>
                     <p className="text-lg leading-6 font-medium text-logo-amber">
@@ -149,10 +150,10 @@ export default function Services(props) {
           <div className="lg:grid lg:grid-flow-row-dense lg:grid-cols-2 lg:gap-8 lg:items-center">
             <div className="lg:col-start-2">
               <h3 className="text-2xl font-extrabold text-gray-900 tracking-tight sm:text-3xl">
-                {props.servicesContent.part2.title}
+                {changeLanguage().servicesContent.part2.title}
               </h3>
               <p className="mt-3 text-xl text-gray-500">
-                {props.servicesContent.part2.intro}
+                {changeLanguage().servicesContent.part2.intro}
               </p>
             </div>
 

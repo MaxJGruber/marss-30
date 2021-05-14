@@ -1,6 +1,9 @@
-export const fullPriceListContentFR = {
+export const fullPriceListContent = {
   headline: "Le catalogue complet",
   intro: "Choisissez la liste qui vous intéresse",
+  button1: "Femmes",
+  button2: "Hommes",
+  button3: "Enfants",
   basicHaircutsMen: [
     {
       id: 1,
@@ -16,8 +19,7 @@ export const fullPriceListContentFR = {
   hairColorMen: [
     {
       id: 1,
-      text:
-        "Forfait couleur (couleur (cover 5’ L’oréal) shampooing, coupe, coiffage)",
+      text: "Forfait couleur (couleur (cover 5’ L’oréal) shampooing, coupe, coiffage)",
     },
     {
       id: 2,
@@ -66,8 +68,7 @@ export const fullPriceListContentFR = {
   basicHaircutsWomen: [
     {
       id: 1,
-      text:
-        "Forfait coupe coiffage (shampooing, soin, coupe, brushing/mis en plis",
+      text: "Forfait coupe coiffage (shampooing, soin, coupe, brushing/mis en plis",
     },
     {
       id: 2,

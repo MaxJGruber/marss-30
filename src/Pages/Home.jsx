@@ -12,14 +12,8 @@ import Footer from "../Components/Footer";
 const Home = (props) => {
   return (
     <div>
-      <LandingPage
-        language={props.language}
-        landingPageContent={props.landingPageContent}
-      />
-      <Services
-        language={props.language}
-        servicesContent={props.servicesContent}
-      />
+      <LandingPage />
+      <Services />
       <TopPricing
         language={props.language}
         topPricingContent={props.topPricingContent}

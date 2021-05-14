@@ -1,4 +1,4 @@
-export const landingPageContentFR = {
+export const landingPageContent = {
   navlinks: {
     services: "Services",
     pricing: "Tarifs",
@@ -23,11 +23,6 @@ export const landingPageContentFR = {
       name: "Enfants",
       href: "#services",
       description: "Your customers' data will be safe and secure.",
-    },
-    {
-      name: "Produits",
-      href: "#services",
-      description: "Connect with third-party tools that you're already using.",
     },
   ],
   taglinePart1: "La Nouvelle-Aquitaine vous attends...",

@@ -1,8 +1,10 @@
-export const photoGalleryContent = {
-  headline: "La galerie de photos",
-  intro: `Decouvrez en image Marss en action dans son salon pour
-    exercer différentes techniques et coupes.`,
-  hook: `N'oubliez pas d'aller sur la page FaceBook de Marss N°30 et mettre un petit "j'aime"`,
+export const footer = {
+  navlinks: [
+    { name: "Home", href: "#landingpage" },
+    { name: "Pricing", href: "#pricing" },
+    { name: "Bio", href: "#bio" },
+    { name: "Photo Gallery", href: "#gallery" },
+  ],
   social: [
     {
       name: "Facebook",
@@ -18,4 +20,5 @@ export const photoGalleryContent = {
       ),
     },
   ],
+  copyright: "2021 - by Max Gruber. All rights reserved.",
 };

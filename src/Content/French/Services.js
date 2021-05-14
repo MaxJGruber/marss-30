@@ -1,4 +1,4 @@
-export const servicesContentFR = {
+export const servicesContent = {
   headline: "Un look pour chaque occasion",
   intro: "Chez Marss N°30, vos cheveux vont faire la fête.",
   part1: {
