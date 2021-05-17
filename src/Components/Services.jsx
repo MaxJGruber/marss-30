@@ -62,8 +62,8 @@ export default function Services() {
               {changeLanguage().servicesContent.part1.intro}
             </p>
             <dl className="mt-10 space-y-10">
-              {changeLanguage().servicesContent.part1.list.map((item) => (
-                <div key={item.id} className="relative">
+              {changeLanguage().servicesContent.part1.list.map((item, i) => (
+                <div key={i} className="relative">
                   <dt>
                     <p className="text-lg leading-6 font-medium text-logo-amber">
                       {item}

@@ -7,26 +7,24 @@ import Bio from "../Components/Bio";
 import Services from "../Components/Services";
 import ContactInfo from "../Components/ContactInfo";
 import PhotoGallery from "../Components/PhotoGallery";
+import CookiesBanner from "../Components/CookiesBanner";
+import CookiesPolicyPopup from "../Components/CookiesPolicyPopup";
 import Footer from "../Components/Footer";
 
-const Home = (props) => {
+const Home = () => {
   return (
     <div>
+      <CookiesBanner />
+      <CookiesPolicyPopup />
       <LandingPage />
       <Services />
-      <TopPricing
-        language={props.language}
-        topPricingContent={props.topPricingContent}
-      />
-      <FullPriceList fullPriceListContent={props.fullPriceListContent} />
+      <TopPricing />
+      <FullPriceList />
       <ContactInfo />
-      <Bio language={props.language} />
-      <PhotoGallery
-        language={props.language}
-        photoGalleryContent={props.photoGalleryContent}
-      />
-      <FAQ language={props.language} />
-      <Footer language={props.language} />
+      <Bio />
+      <PhotoGallery />
+      <FAQ />
+      <Footer />
     </div>
   );
 };

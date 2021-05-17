@@ -7,6 +7,8 @@ import { bio } from "./Bio";
 import { footer } from "./Footer";
 import { faq } from "./faq";
 import { contactInfo } from "./Times&Location";
+import { cookieBanner } from "./CookieBanner";
+import { cookiePolicy } from "./CookiePolicy";
 
 export {
   landingPageContent,
@@ -18,4 +20,6 @@ export {
   faq,
   fullPriceListContent,
   contactInfo,
+  cookieBanner,
+  cookiePolicy,
 };

@@ -18,7 +18,6 @@ function LandingPage(props) {
   const handleChange = (event) => {
     event.preventDefault();
     props.setLanguage(event.target.value);
-    localStorage.setItem("language", event.target.value);
   };
   const content = changeLanguage();
   return (

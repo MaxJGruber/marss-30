@@ -7,6 +7,7 @@ import { bio } from "./Bio";
 import { footer } from "./Footer";
 import { faq } from "./faq";
 import { contactInfo } from "./Times&Location";
+import { cookieBanner } from "./CookieBanner";
 
 export {
   landingPageContent,
@@ -18,4 +19,5 @@ export {
   footer,
   faq,
   contactInfo,
+  cookieBanner,
 };
