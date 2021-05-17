@@ -1,5 +1,6 @@
 import adultCut from "../Assets/adult_cut.jpeg";
 import childCut from "../Assets/child_cut.jpeg";
+import sponsorLogo from "../Assets/sponsor_logo.png";
 import changeLanguage from "../redux/languageContent.js";
 
 export default function Services() {
@@ -47,9 +48,12 @@ export default function Services() {
           <p className="mt-4 max-w-3xl mx-auto text-center text-2xl text-gray-500">
             {changeLanguage().servicesContent.intro}
           </p>
+          <div className="flex flex-col items-center justify-center mt-5">
+            <img src={sponsorLogo} alt="René Furterer Logo" className="h-20" />
+          </div>
         </div>
 
-        <div className="relative mt-12 lg:mt-24 lg:grid lg:grid-cols-2 lg:gap-8 lg:items-center">
+        <div className="relative mt-12 lg:mt-18 lg:grid lg:grid-cols-2 lg:gap-8 lg:items-center">
           <div className="relative">
             <h3 className="text-2xl font-extrabold text-gray-900 tracking-tight sm:text-3xl">
               {changeLanguage().servicesContent.part1.title}
@@ -105,7 +109,7 @@ export default function Services() {
             </svg>
             <img
               className="relative mx-auto"
-              width={490}
+              width={390}
               src={adultCut}
               alt=""
             />
@@ -193,7 +197,7 @@ export default function Services() {
               </svg>
               <img
                 className="relative mx-auto"
-                width={490}
+                width={390}
                 src={childCut}
                 alt=""
               />

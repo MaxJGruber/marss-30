@@ -1,54 +1,32 @@
 export const topPricingContent = {
   headline: "Les meilleures ventes",
-  intro: "Jetez un coup d'oeil aux services recommendés chez Marss N°30",
-  included: "Inclus",
+  intro: "Découvrez les services les plus courants chez Marss N30",
   topPrices: [
     {
-      name: "Coupe enfants (4-11 ans)",
+      name: "Coupe de cheveux pour enfants (4 -11 ans)",
 
-      priceMonthly: 15,
-      description: "C'est fini la coupe à la Justin Bieber!",
-      includedFeatures: [
-        "Shampooing.",
-        "Coupe de cheveux.",
-        "Soins des cheveux.",
-      ],
+      price: "15€ - 17€",
+      description: "Dès la première coupe de cheveux.",
     },
     {
-      name: "Coupe basique homme",
+      name: "Coupe de cheveux pour homme",
 
-      priceMonthly: 19,
-      description: "Le nécessaire pour un look rafraîchi et intemporel",
-      includedFeatures: [
-        "Shampooing.",
-        "Coupe de cheveux.",
-        "Soins des cheveux.",
-      ],
-    },
-    {
-      name: "Coupe basique femme",
-
-      priceMonthly: 37,
+      price: "15€ - 17€ - 19€",
       description:
-        "Qui dit que la simplicité et l'élégance sont des choses du passé?",
-      includedFeatures: [
-        "Shampooing.",
-        "Coupe de cheveux.",
-        "Soins des cheveux.",
-      ],
+        "Tous les éléments de base nécessaires pour un look rafraîchi.",
     },
     {
-      name: "Coupe & couleur femme",
+      name: "Shampooing, coupe, brushing pour femme",
 
-      priceMonthly: 66,
+      price: "32€ - 37€",
+      description: "La simplicité et l'élégance ne sont pas des mots du passé.",
+    },
+    {
+      name: "Coupe et coloration pour femme",
+
+      price: "À partir de 58€",
       description:
         "Nouveau look, nouveau vous. Ajoutez de la couleur à votre vie.",
-      includedFeatures: [
-        "Shampooing.",
-        "Coupe de cheveux.",
-        "Soins des cheveux.",
-        "Couleur des cheveux.",
-      ],
     },
   ],
 };

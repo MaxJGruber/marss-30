@@ -1,9 +1,9 @@
 import photo1 from "../Assets/PhotoGallery_Pics/photo1.jpeg";
 import photo2 from "../Assets/PhotoGallery_Pics/photo2.jpeg";
 import photo3 from "../Assets/PhotoGallery_Pics/photo3.jpeg";
-import photo4 from "../Assets/PhotoGallery_Pics/photo4.jpeg";
-import photo5 from "../Assets/PhotoGallery_Pics/photo5.jpeg";
-import photo6 from "../Assets/PhotoGallery_Pics/photo6.jpeg";
+// import photo4 from "../Assets/PhotoGallery_Pics/photo4.jpeg";
+// import photo5 from "../Assets/PhotoGallery_Pics/photo5.jpeg";
+// import photo6 from "../Assets/PhotoGallery_Pics/photo6.jpeg";
 import changeLanguage from "../redux/languageContent.js";
 
 const images = [
@@ -19,18 +19,18 @@ const images = [
     index: 3,
     imageUrl: photo3,
   },
-  {
-    index: 4,
-    imageUrl: photo4,
-  },
-  {
-    index: 5,
-    imageUrl: photo5,
-  },
-  {
-    index: 6,
-    imageUrl: photo6,
-  },
+  // {
+  //   index: 4,
+  //   imageUrl: photo4,
+  // },
+  // {
+  //   index: 5,
+  //   imageUrl: photo5,
+  // },
+  // {
+  //   index: 6,
+  //   imageUrl: photo6,
+  // },
   // More people...
 ];
 
@@ -54,7 +54,7 @@ export default function PhotoGallery() {
                 <a
                   key={item.name}
                   href={item.href}
-                  className="text-gray-400 hover:text-gray-500"
+                  className="text-gray-400 hover:text-amber-500"
                 >
                   <span className="sr-only">{item.name}</span>
                   <item.icon className="h-6 w-6" aria-hidden="true" />
@@ -66,11 +66,11 @@ export default function PhotoGallery() {
             {images.map((image) => (
               <li key={image.index}>
                 <div className="space-y-4">
-                  <div className="aspect-w-3 aspect-h-2">
+                  <div className="aspect-w-3 aspect-h-2 flex justify-center">
                     <img
                       className="object-cover shadow-lg rounded-lg"
                       src={image.imageUrl}
-                      alt=""
+                      alt={image.imageUrl}
                     />
                   </div>
                 </div>

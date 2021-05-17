@@ -33,7 +33,7 @@ const Bio = () => {
                     width={4}
                     height={4}
                     className="text-gray-200"
-                    fill="currentColor"
+                    fill="#ff914d"
                   />
                 </pattern>
               </defs>
@@ -76,18 +76,21 @@ const Bio = () => {
               </h3>
             </div>
             <div className="mt-5 prose prose-indigo text-gray-500 mx-auto lg:max-w-none lg:row-start-1 lg:col-start-1">
-              <p className="text-lg text-gray-500 my-5">
+              <p className="text-md text-gray-500 my-5">
+                {changeLanguage().bio.intro}
+              </p>
+              <p className="text-md text-gray-500 my-5">
                 {changeLanguage().bio.textPart1}
               </p>
 
-              <p className="text-lg text-gray-500 my-5">
+              <p className="text-md text-gray-500 my-5">
                 {changeLanguage().bio.textPart2}
               </p>
-              <p className="text-lg text-gray-500 my-5">
+              <p className="text-md text-gray-500 my-5">
                 {changeLanguage().bio.textPart3}
               </p>
-              <p className="text-lg text-gray-500 my-5">
-                {changeLanguage().bio.textPart2}
+              <p className="text-md text-gray-500 my-5">
+                {changeLanguage().bio.textPart4}
               </p>
             </div>
           </div>

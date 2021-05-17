@@ -1,19 +1,20 @@
 export const servicesContent = {
-  headline: "Un look pour chaque occasion",
-  intro: "Chez Marss N°30, vos cheveux vont faire la fête.",
+  headline: "Donnez une nouvelle vie à vos cheveux",
+  intro:
+    "Marss préfère utiliser, dans la mesure du possible, des produits qui innovent durablement en s'inspirant de la nature et qui favorisent l'agriculture biologique et encouragent l'agro-écologie (René Furterer).",
   part1: {
-    title: "Un coiffeur avec de l'expérience",
+    title: "Un coiffeur expérimenté et même parfois expérimental",
     intro:
-      "Marss a plus de 40 d'expériences dans la coiffure. Dans son salon, il prend en charge de nombreux services tels que:",
+      "Avec plus de 40 ans d'expérience dans le secteur de la coiffure (il a commencé très jeune !) peu de demandes, même les plus insolites ne peuvent le surprendre.",
     list: [
-      "les permanentes & couleurs",
-      "du rafraîchissement aux grandes coupes",
-      "les brushings et coiffure de fête",
+      "Shampooing, soin, brushing",
+      "Couleurs, mèches et balayage",
+      "De la coupe rafraîchissement à la transformation de coiffure",
     ],
   },
   part2: {
     title: "Un coiffeur pour toute la famille",
     intro:
-      "D'une première coupe jusqu'à peigner les derniers cheveux de la tête, les cheveux et les têtes sont de taille et forme différente. Dans son salon, Marss s'occupe de tous les membres de la famille pour que vous chacun puisse être sur son 31.",
+      "D'une première coupe jusqu'à peigner les derniers cheveux de la tête, les cheveux et les têtes sont de taille et forme différente. Dans son salon, chaque membre de la famille trouvera son style chez Marss dans une ambiance décontractée et conviviale.",
   },
 };

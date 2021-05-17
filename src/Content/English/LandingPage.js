@@ -25,12 +25,12 @@ export const landingPageContent = {
       description: "Your customers' data will be safe and secure.",
     },
   ],
-  taglinePart1: "Enjoy the South-West of France",
+  taglinePart1: "Enjoy South-West France",
   taglinePart2: "in style!",
   introPart1:
-    "From a trim to a hair-dye, Marss makes sure you ge the hairstyle that YOU deserve.",
-  introPart2:
-    "Located at Allemans du Dropt, Marss N°30 is open 5 days a week to take care of your hair.",
+    "Lover of Harley motorbikes, vintage cars and good wine with an eclectic musical taste, the atypical hairdresser, Marss N30 is located in Allemans du Dropt and is open 5 days a week to take care of your hair.",
+  // introPart2:
+  //   "Located at Allemans du Dropt, Marss N°30 is open 5 days a week to take care of your hair.",
   button1: "Call 05 53 88 68 35",
   button2: "Get Directions",
 };

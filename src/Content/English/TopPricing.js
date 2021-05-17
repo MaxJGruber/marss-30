@@ -1,34 +1,33 @@
 export const topPricingContent = {
   headline: "Bestsellers",
-  intro: "Check out the most recommended services at Marss's Salon",
-  included: "What's included",
+  intro: "Check out the most common services at Marss's Salon",
   topPrices: [
     {
       name: "Child's Haircut (4-11 y.o)",
 
-      priceMonthly: 15,
-      description: "Don't look like Justin Bieber anymore!",
+      price: "15€ - 17€",
+      description: "From the very first haircut.",
       includedFeatures: ["Hairwash.", "Haircut.", "Hair Care."],
     },
     {
       name: "Men's Basic Haircut",
 
-      priceMonthly: 19,
-      description: "All the basics needed for a refreshed look",
+      price: "15€ - 17€ - 19€",
+      description: "All the basic elements needed for a refreshed look.",
       includedFeatures: ["Hairwash.", "Haircut.", "Hair Care."],
     },
     {
       name: "Woman's Basic Haircut",
 
-      priceMonthly: 37,
-      description: "Simple, elegant & youthful don't need to be words of past",
+      price: "32€ - 37€",
+      description: "Simplicity, elegance and youth are not words of the past.",
       includedFeatures: ["Hairwash.", "Haircut.", "Hair Care."],
     },
     {
       name: "Woman's Haircut & Dye",
 
-      priceMonthly: 66,
-      description: "New look, new you. Add some color to your life.",
+      price: "From 58€",
+      description: "New look, new you. Add colour to your life.",
       includedFeatures: ["Hairwash.", "Haircut.", "Hair Care.", "Hair Dye"],
     },
   ],

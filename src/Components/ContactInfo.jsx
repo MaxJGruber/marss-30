@@ -24,14 +24,14 @@ const ContactInfo = () => {
             {changeLanguage().contactInfo.satTimes}
           </span>
         </h2>
-        <div className="mt-8 flex lg:mt-0 lg:flex-shrink-0 ">
+        <div className="mt-8 lg:mt-0">
           <div className="map-frame">
-            <div className=" rounded-md map-container">
+            <div className="rounded-md map-container px-0 py-0">
               <AppMap />
             </div>
           </div>
         </div>
-        <h2 className="text-3xl max-w-7xl font-extrabold text-gray-900 sm:text-4xl">
+        <h2 className="text-3xl max-w-7xl font-extrabold text-gray-900 mt-5 sm:text-4xl">
           <span className="block">{changeLanguage().contactInfo.address}</span>
           <span className="block text-logo-amber text-3xl">
             30 avenue de Miramont

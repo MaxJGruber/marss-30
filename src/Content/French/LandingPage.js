@@ -25,12 +25,12 @@ export const landingPageContent = {
       description: "Your customers' data will be safe and secure.",
     },
   ],
-  taglinePart1: "La Nouvelle-Aquitaine vous attends...",
-  taglinePart2: "Vos cheveux aussi!",
+  taglinePart1: "Profitez du Sud-Ouest de la France",
+  taglinePart2: "avec style!",
   introPart1:
-    "D'un simple rafraîchissement à une couleur, Marss s'assure que vous aurez la coupe de cheveux que vous méritez.",
-  introPart2:
-    "Situé à Allemans du Dropt, Marss N°30 est ouvert 5 jours par semaines pour s'occuper de vos cheveux.",
+    "Amateur des motos Harley, des voitures anciennes et du bon vin avec un goût musical éclectique, le coiffeur atypique, Marss N30 est situé à Allemans du Dropt et est ouvert 5 jours par semaine pour prendre soin de vos cheveux.",
+  // introPart2:
+  //   "Situé à Allemans du Dropt, Marss N°30 est ouvert 5 jours par semaines pour s'occuper de vos cheveux.",
   button1: "Appelez 05 53 88 68 35",
   button2: "Votre itinéraire",
 };

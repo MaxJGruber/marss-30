@@ -12,8 +12,8 @@ const AppMap = () => {
         style="mapbox://styles/mapbox/outdoors-v11"
         zoom={[14]}
         containerStyle={{
-          width: "100%",
-          height: "100%",
+          width: "380px",
+          height: "380px",
         }}
         center={[0.2916974797318405, 44.62779481310214]}
       >

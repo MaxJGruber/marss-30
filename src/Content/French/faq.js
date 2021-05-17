@@ -3,17 +3,19 @@ export const faq = {
   hook: `Vous trouvez pas votre réponse? Appelez le salon directement au:`,
   questions: [
     {
-      question: "Quels sont les gestes barrières mis en place par le salon?",
-      answer: `Le personnel porte des masques à tout instant. Le salon met à disposition du gel hydroalcoolique pour tous les clients. En raison de la petite superficie du salon, un maximum de 2 personnes (personnel exclu) peuvent être admis à la fois.`,
+      question:
+        "Quelles mesures de prévention/sanitaires Covid-19 le salon pratique-t-il?",
+      answer: `Le personnel porte des masques à tout moment. Le salon dispose d'un désinfectant à l'entrée pour tous les clients. En raison de la petite taille du salon, un maximum de 1 personne (à l'exception du personnel) peut être admis à l'intérieur.`,
     },
     {
-      question: "Est-ce que le salon est ouvert le dimanche?",
-      answer: "Non, le salon est fermé toute la journée les dimanche et lundi.",
-    },
-    {
-      question: "Puis-je me faire couper les cheveux sans RDV?",
+      question: "Le salon est-il ouvert le dimanche?",
       answer:
-        "Cela dépend de l'affluence du salon. C'est fortement recommandé de réserver à l'avance pour avoir une visite plus confortable et plus sécurisé pour les clients et pour le personnel.",
+        "Non, le salon est fermé toute la journée le dimanche et le lundi.",
+    },
+    {
+      question: "Puis-je me faire couper les cheveux sans rendez-vous?",
+      answer:
+        "Cela dépend uniquement de l'emploi du temps. Il est recommandé de prendre rendez-vous afin de rendre la visite plus confortable et plus sûre pour le personnel et les clients.",
     },
     // More questions...
   ],

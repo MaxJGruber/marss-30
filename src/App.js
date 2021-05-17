@@ -4,6 +4,7 @@ import { photoGalleryContent } from "./Content/English/PhotoGallery";
 import store from "./redux/store";
 import { useState, useEffect } from "react";
 import changeLanguage from "./redux/languageContent.js";
+// console.log(localStorage);
 
 function App() {
   // eslint-disable-next-line
