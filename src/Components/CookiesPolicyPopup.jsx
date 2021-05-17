@@ -96,14 +96,18 @@ function CookiesPolicyPopup(props) {
                     </p>
                     <p className="text-sm text-gray-500 my-5">
                       {changeLanguage().cookiePolicy.text5}
-                      <a
-                        href="https://tools.google.com/dlpage/gaoptout"
+                      <button
+                        onClick={() =>
+                          window.open(
+                            "https://tools.google.com/dlpage/gaoptout"
+                          )
+                        }
                         target="_blank"
                         rel="noreferrer"
                         className="font-bold hover:underline"
                       >
                         Analytics opt-out
-                      </a>
+                      </button>
                     </p>
                   </div>
                 </div>
