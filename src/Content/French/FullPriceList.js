@@ -1,5 +1,5 @@
 export const fullPriceListContent = {
-  headline: "Other",
+  headline: "Autres",
   intro: "Pick the list that interests you",
   otherServices: [
     {

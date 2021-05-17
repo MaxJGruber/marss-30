@@ -94,6 +94,17 @@ function CookiesPolicyPopup(props) {
                     <p className="text-sm text-gray-500 my-5">
                       {changeLanguage().cookiePolicy.text4}
                     </p>
+                    <p className="text-sm text-gray-500 my-5">
+                      {changeLanguage().cookiePolicy.text5}
+                      <a
+                        href="https://tools.google.com/dlpage/gaoptout"
+                        target="_blank"
+                        rel="noreferrer"
+                        className="font-bold hover:underline"
+                      >
+                        Analytics opt-out
+                      </a>
+                    </p>
                   </div>
                 </div>
               </div>

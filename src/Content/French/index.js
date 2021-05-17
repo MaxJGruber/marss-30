@@ -8,6 +8,7 @@ import { footer } from "./Footer";
 import { faq } from "./faq";
 import { contactInfo } from "./Times&Location";
 import { cookieBanner } from "./CookieBanner";
+import { cookiePolicy } from "./CookiePolicy";
 
 export {
   landingPageContent,
@@ -20,4 +21,5 @@ export {
   faq,
   contactInfo,
   cookieBanner,
+  cookiePolicy,
 };

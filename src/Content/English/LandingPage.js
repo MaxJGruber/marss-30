@@ -25,7 +25,7 @@ export const landingPageContent = {
       description: "Your customers' data will be safe and secure.",
     },
   ],
-  taglinePart1: "Enjoy South-West France",
+  taglinePart1: "Enjoy the South-West of France",
   taglinePart2: "in style!",
   introPart1:
     "Lover of Harley motorbikes, vintage cars and good wine with an eclectic musical taste, the atypical hairdresser, Marss N30 is located in Allemans du Dropt and is open 5 days a week to take care of your hair.",
