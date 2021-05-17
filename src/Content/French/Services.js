@@ -15,6 +15,6 @@ export const servicesContent = {
   part2: {
     title: "Un coiffeur pour toute la famille",
     intro:
-      "D'une première coupe jusqu'à peigner les derniers cheveux de la tête, les cheveux et les têtes sont de taille et forme différente. Dans son salon, chaque membre de la famille trouvera son style chez Marss dans une ambiance décontractée et conviviale.",
+      "Dans son salon, chaque membre de la famille trouvera son style chez Marss dans une ambiance décontractée et conviviale.",
   },
 };

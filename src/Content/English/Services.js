@@ -15,6 +15,6 @@ export const servicesContent = {
   part2: {
     title: "A hairdresser for the whole family",
     intro:
-      "From a first haircut to combing the last hairs on your head, hair and heads come in all shapes and sizes. At his salon, every member of the family will find his or her own style at Marss in a relaxed and friendly atmosphere.",
+      "At his salon, every member of the family will find his or her own style at Marss in a relaxed and friendly atmosphere.",
   },
 };
