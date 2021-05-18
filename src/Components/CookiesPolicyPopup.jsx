@@ -104,7 +104,7 @@ function CookiesPolicyPopup(props) {
                         }
                         target="_blank"
                         rel="noreferrer"
-                        className="font-bold hover:underline"
+                        className="font-bold hover:underline focus:outline-none"
                       >
                         Analytics opt-out
                       </button>

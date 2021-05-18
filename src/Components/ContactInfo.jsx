@@ -44,6 +44,7 @@ const ContactInfo = () => {
             href="https://www.google.fr/maps/place/30+Avenue+de+Miramont,+47800+Allemans-du-Dropt/@44.6277956,0.2895088,17z/data=!3m1!4b1!4m5!3m4!1s0x12aa94a8f144786b:0x3d55a626d8c6d00f!8m2!3d44.6277918!4d0.2916975"
             target="_blank"
             rel="noreferrer"
+            title="google maps link"
             className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-logo-white bg-amber-600 hover:bg-amber-300 hover:text-gray-900 md:py-4 md:text-lg md:px-10"
           >
             {changeLanguage().contactInfo.directionsButton}

@@ -14,7 +14,6 @@ import Footer from "../Components/Footer";
 const Home = () => {
   return (
     <div>
-      <CookiesBanner />
       <CookiesPolicyPopup />
       <LandingPage />
       <Services />
@@ -25,6 +24,7 @@ const Home = () => {
       <PhotoGallery />
       <FAQ />
       <Footer />
+      <CookiesBanner />
     </div>
   );
 };

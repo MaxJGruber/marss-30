@@ -13,6 +13,7 @@ export default function Faq() {
               {changeLanguage().faq.hook}
               <a
                 href="tel:05 53 88 68 35"
+                title="telephone number"
                 className="font-medium text-logo-amber hover:text-amber-700"
               >
                 {" "}

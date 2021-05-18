@@ -10,14 +10,17 @@ const images = [
   {
     index: 1,
     imageUrl: photo1,
+    alt: "haircut man",
   },
   {
     index: 2,
     imageUrl: photo2,
+    alt: "blond lady outside Marss N30",
   },
   {
     index: 3,
     imageUrl: photo3,
+    alt: "blond boy after haircut",
   },
   // {
   //   index: 4,
@@ -54,6 +57,7 @@ export default function PhotoGallery() {
                 <a
                   key={item.name}
                   href={item.href}
+                  title={item.name}
                   className="text-gray-400 hover:text-amber-500"
                 >
                   <span className="sr-only">{item.name}</span>
@@ -70,7 +74,7 @@ export default function PhotoGallery() {
                     <img
                       className="object-cover shadow-lg rounded-lg"
                       src={image.imageUrl}
-                      alt={image.imageUrl}
+                      alt={image.alt}
                     />
                   </div>
                 </div>

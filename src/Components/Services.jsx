@@ -111,7 +111,7 @@ export default function Services() {
               className="relative mx-auto"
               width={390}
               src={adultCut}
-              alt=""
+              alt="adult man getting haircut"
             />
           </div>
         </div>
@@ -199,7 +199,7 @@ export default function Services() {
                 className="relative mx-auto"
                 width={390}
                 src={childCut}
-                alt=""
+                alt="child getting haircut"
               />
             </div>
           </div>

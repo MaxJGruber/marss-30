@@ -1,8 +1,8 @@
-import { XIcon } from "@heroicons/react/outline";
-import changeLanguage from "../redux/languageContent";
+import { CheckIcon } from "@heroicons/react/outline";
 import { useState, useEffect } from "react";
 import { connect } from "react-redux";
 import store from "../redux/store";
+import changeLanguage from "../redux/languageContent";
 
 const mapDispatchToProps = (dispatch) => ({
   setCookiesAuth: (cookiesAuth) =>
@@ -17,6 +17,15 @@ const mapStateToProps = (state) => {
 
 function CookiesBanner(props) {
   const [open, setOpen] = useState(true);
+  // eslint-disable-next-line
+  const [content, setContent] = useState(null);
+
+  useEffect(() => {
+    store.subscribe(() => {
+      store.getState();
+      setContent(changeLanguage());
+    }, []);
+  });
 
   useEffect(() => {
     if (Boolean(store.getState().cookiesAuth.cookiesAuth) === true) {
@@ -66,7 +75,7 @@ function CookiesBanner(props) {
                 className="flex p-2 rounded-md hover:bg-amber-600 focus:outline-none focus:ring-2 focus:ring-white"
               >
                 <span className="sr-only">Dismiss</span>
-                <XIcon className="h-6 w-6 text-white" aria-hidden="true" />
+                <CheckIcon className="h-6 w-6 text-white" aria-hidden="true" />
               </button>
             </div>
           </div>

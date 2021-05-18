@@ -28,11 +28,13 @@ function LandingPage(props) {
             <div className="max-w-7xl mx-auto px-4 sm:px-6">
               <div className="flex justify-between items-center py-2 md:justify-start md:space-x-10">
                 <div className="flex justify-start lg:w-0 lg:flex-1">
-                  <img
-                    className="h-10 w-auto sm:h-20 rounded-md logo"
-                    src={logo}
-                    alt="logo"
-                  />
+                  <a href="/" title="Home">
+                    <img
+                      className="h-10 w-auto sm:h-20 rounded-md logo"
+                      src={logo}
+                      alt="logo Marss N30"
+                    />
+                  </a>
                 </div>
                 <div className="-mr-2 -my-2 md:hidden">
                   <Popover.Button className="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-amber-500">
@@ -235,7 +237,7 @@ function LandingPage(props) {
           <img
             className="absolute inset-0 w-full h-full object-cover"
             src={introPic}
-            alt="intro-pic"
+            alt="styling by Marss"
           />
         </div>
       </main>

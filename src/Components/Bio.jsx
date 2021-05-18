@@ -49,7 +49,7 @@ const Bio = () => {
                   <img
                     className="rounded-lg shadow-lg object-cover object-center"
                     src={aboutPic}
-                    alt="Martial Beaugrand"
+                    alt="Marss smoking on bike"
                     width={500}
                     height={800}
                   />
