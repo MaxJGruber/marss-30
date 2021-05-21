@@ -1,4 +1,4 @@
-const sslRedirect = require("heroku-ssl-redirect");
+import sslRedirect from "heroku-ssl-redirect";
 const express = require("express");
 
 const path = require("path");
@@ -6,7 +6,7 @@ const port = process.env.PORT || 8080;
 const app = express();
 
 // enable ssl redirect
-app.use(sslRedirect(["production"], 301));
+app.use(sslRedirect());
 app.use(express.static(__dirname));
 app.use(express.static(path.join(__dirname, "build")));
 app.get("/ping", function (req, res) {
