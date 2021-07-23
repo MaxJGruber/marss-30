@@ -1,5 +1,7 @@
 import Home from "./Pages/Home.jsx";
+import NotFound from "./Pages/404Page";
 import store from "./redux/store";
+import { Switch, Route } from "react-router-dom";
 import { useState, useEffect } from "react";
 import changeLanguage from "./redux/languageContent.js";
 
@@ -14,7 +16,10 @@ function App() {
   });
   return (
     <div className="App">
-      <Home />
+      <Switch>
+        <Route exact path="/" component={Home} />
+        <Route component={NotFound} />
+      </Switch>
     </div>
   );
 }
