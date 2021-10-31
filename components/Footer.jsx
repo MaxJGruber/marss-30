@@ -1,4 +1,4 @@
-import goToSection from "helpers/goToSection";
+import { goToSection } from "helpers/goToSection";
 import changeLanguage from "stores/languageContent";
 
 const Footer = () => (

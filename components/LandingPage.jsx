@@ -1,9 +1,8 @@
-import Image from "next/image";
 import { Fragment } from "react";
 import { Popover, Transition } from "@headlessui/react";
 import { MenuIcon, XIcon } from "@heroicons/react/outline";
 import { connect } from "react-redux";
-import goToSection from "helpers/goToSection";
+import { goToSection } from "helpers/goToSection";
 import changeLanguage from "stores/languageContent";
 
 const mapDispatchToProps = (dispatch) => ({
