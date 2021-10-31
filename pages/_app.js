@@ -8,10 +8,10 @@ import { DefaultSeo } from "next-seo";
 import { TITLE, META_DESCRIPTION, META_IMAGE, URL } from "root/config";
 import store from "stores/store";
 import changeLanguage from "stores/languageContent";
-import "styles/globals.css";
 import * as gtag from "helpers/gtag";
+import "styles/globals.css";
 
-function App({ Component, pageProps }) {
+const App = ({ Component, pageProps }) => {
   if (typeof window === undefined) {
     enableStaticRendering(true);
   }
@@ -62,7 +62,7 @@ function App({ Component, pageProps }) {
       </Provider>
     </div>
   );
-}
+};
 
 export default App;
 
