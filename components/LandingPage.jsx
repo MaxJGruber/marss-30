@@ -1,10 +1,9 @@
+import Image from "next/image";
 import { Fragment } from "react";
 import { Popover, Transition } from "@headlessui/react";
 import { MenuIcon, XIcon } from "@heroicons/react/outline";
 import { connect } from "react-redux";
-import introPic from "static/homepage_pic.jpg";
-import logo from "static/marss_logo.png";
-import goToSection from "helpers/GoToSection";
+import goToSection from "helpers/goToSection";
 import changeLanguage from "stores/languageContent";
 
 const mapDispatchToProps = (dispatch) => ({
@@ -14,11 +13,12 @@ const mapStateToProps = (state) => {
   return { language: state.language };
 };
 
-function LandingPage(props) {
+const LandingPage = (props) => {
   const handleChange = (event) => {
     event.preventDefault();
     props.setLanguage(event.target.value);
   };
+  
   const content = changeLanguage();
   return (
     <div id="landingpage" className="relative bg-white">
@@ -29,9 +29,11 @@ function LandingPage(props) {
               <div className="flex justify-between items-center py-2 md:justify-start md:space-x-10">
                 <div className="flex justify-start lg:w-0 lg:flex-1">
                   <a href="/" title="Home">
-                    <img
+                    <Image
                       className="h-10 w-auto sm:h-20 rounded-md logo"
-                      src={logo}
+                      height={100}
+                      width={180}
+                      src="/static/marss_logo.png"
                       alt="logo Marss N30"
                     />
                   </a>
@@ -119,7 +121,11 @@ function LandingPage(props) {
                   <div className="pt-5 pb-6 px-5">
                     <div className="flex items-center justify-between">
                       <div>
-                        <img className="h-8 w-auto" src={logo} alt="Workflow" />
+                        <img
+                          className="h-8 w-auto"
+                          src="static/marss_logo.png"
+                          alt="Workflow"
+                        />
                       </div>
                       <div className="-mr-2">
                         <Popover.Button className="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-amber-500">
@@ -236,13 +242,13 @@ function LandingPage(props) {
         <div className="relative w-full h-64 sm:h-72 md:h-96 lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2 lg:h-full">
           <img
             className="absolute inset-0 w-full h-full object-cover"
-            src={introPic}
+            src="static/homepage_pic.jpg"
             alt="styling by Marss"
           />
         </div>
       </main>
     </div>
   );
-}
+};
 
 export default connect(mapStateToProps, mapDispatchToProps)(LandingPage);

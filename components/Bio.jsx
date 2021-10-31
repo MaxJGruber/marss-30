@@ -1,6 +1,4 @@
-import React from "react";
 import { CameraIcon } from "@heroicons/react/solid";
-import aboutPic from "static/about_pic.jpeg";
 import changeLanguage from "stores/languageContent";
 
 const Bio = () => (

@@ -13,7 +13,7 @@ const mapStateToProps = (state) => {
   return { popupOpen: state.popupOpen };
 };
 
-function CookiesPolicyPopup(props) {
+const CookiesPolicyPopup = (props) => {
   const [open, setOpen] = useState(false);
 
   useEffect(() => {
@@ -127,6 +127,6 @@ function CookiesPolicyPopup(props) {
       </Dialog>
     </Transition.Root>
   );
-}
+};
 
 export default connect(mapStateToProps, mapDispatchToProps)(CookiesPolicyPopup);

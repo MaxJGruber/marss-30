@@ -15,7 +15,7 @@ const mapStateToProps = (state) => {
   return { cookiesAuth: state.cookiesAuth, popupOpen: state.popupOpen };
 };
 
-function CookiesBanner(props) {
+const CookiesBanner = (props) => {
   const [open, setOpen] = useState(true);
   // eslint-disable-next-line
   const [content, setContent] = useState(null);
@@ -83,6 +83,6 @@ function CookiesBanner(props) {
       )}
     </>
   );
-}
+};
 
 export default connect(mapStateToProps, mapDispatchToProps)(CookiesBanner);
