@@ -1,4 +1,4 @@
-import content from "../Content/index";
+import content from "../content/index";
 import store from "./store";
 
 function changeLanguage() {

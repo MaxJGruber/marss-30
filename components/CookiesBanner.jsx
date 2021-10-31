@@ -1,8 +1,8 @@
-import { CheckIcon } from "@heroicons/react/outline";
 import { useState, useEffect } from "react";
 import { connect } from "react-redux";
-import store from "../redux/store";
-import changeLanguage from "../redux/languageContent";
+import { CheckIcon } from "@heroicons/react/outline";
+import store from "stores/store";
+import changeLanguage from "stores/languageContent";
 
 const mapDispatchToProps = (dispatch) => ({
   setCookiesAuth: (cookiesAuth) =>
@@ -15,7 +15,7 @@ const mapStateToProps = (state) => {
   return { cookiesAuth: state.cookiesAuth, popupOpen: state.popupOpen };
 };
 
-function CookiesBanner(props) {
+const CookiesBanner = (props) => {
   const [open, setOpen] = useState(true);
   // eslint-disable-next-line
   const [content, setContent] = useState(null);
@@ -83,6 +83,6 @@ function CookiesBanner(props) {
       )}
     </>
   );
-}
+};
 
 export default connect(mapStateToProps, mapDispatchToProps)(CookiesBanner);

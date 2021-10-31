@@ -1,11 +1,10 @@
+import Image from "next/image";
 import { Fragment } from "react";
 import { Popover, Transition } from "@headlessui/react";
 import { MenuIcon, XIcon } from "@heroicons/react/outline";
 import { connect } from "react-redux";
-import introPic from "../Assets/homepage_pic.jpg";
-import logo from "../Assets/marss_logo.png";
-import goToSection from "../GoToSection";
-import changeLanguage from "../redux/languageContent";
+import goToSection from "helpers/goToSection";
+import changeLanguage from "stores/languageContent";
 
 const mapDispatchToProps = (dispatch) => ({
   setLanguage: (language) => dispatch({ type: "SET_LANGUAGE", language }),
@@ -14,11 +13,12 @@ const mapStateToProps = (state) => {
   return { language: state.language };
 };
 
-function LandingPage(props) {
+const LandingPage = (props) => {
   const handleChange = (event) => {
     event.preventDefault();
     props.setLanguage(event.target.value);
   };
+
   const content = changeLanguage();
   return (
     <div id="landingpage" className="relative bg-white">
@@ -31,7 +31,7 @@ function LandingPage(props) {
                   <a href="/" title="Home">
                     <img
                       className="h-10 w-auto sm:h-20 rounded-md logo"
-                      src={logo}
+                      src="static/marss_logo.png"
                       alt="logo Marss N30"
                     />
                   </a>
@@ -119,7 +119,11 @@ function LandingPage(props) {
                   <div className="pt-5 pb-6 px-5">
                     <div className="flex items-center justify-between">
                       <div>
-                        <img className="h-8 w-auto" src={logo} alt="Workflow" />
+                        <img
+                          className="h-8 w-auto"
+                          src="static/marss_logo.png"
+                          alt="Workflow"
+                        />
                       </div>
                       <div className="-mr-2">
                         <Popover.Button className="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-amber-500">
@@ -194,7 +198,7 @@ function LandingPage(props) {
         )}
       </Popover>
 
-      <main className="lg:relative">
+      <main className="lg:relative min-h-screen">
         <div className="mx-auto max-w-7xl w-full pt-20 pb-20 text-center lg:py-45 lg:text-left">
           <div className="px-4 md:py-12 sm:py-0 lg:w-1/2 sm:px-8 xl:pr-16">
             <h1 className="text-4xl tracking-tight font-extrabold text-gray-900 sm:text-5xl md:text-6xl lg:text-5xl xl:text-6xl">
@@ -236,13 +240,13 @@ function LandingPage(props) {
         <div className="relative w-full h-64 sm:h-72 md:h-96 lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2 lg:h-full">
           <img
             className="absolute inset-0 w-full h-full object-cover"
-            src={introPic}
+            src="static/homepage_pic.jpg"
             alt="styling by Marss"
           />
         </div>
       </main>
     </div>
   );
-}
+};
 
 export default connect(mapStateToProps, mapDispatchToProps)(LandingPage);

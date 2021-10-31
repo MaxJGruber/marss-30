@@ -2,8 +2,8 @@ import { Fragment, useState, useEffect } from "react";
 import { Dialog, Transition } from "@headlessui/react";
 import { DatabaseIcon } from "@heroicons/react/outline";
 import { connect } from "react-redux";
-import store from "../redux/store";
-import changeLanguage from "../redux/languageContent";
+import store from "stores/store";
+import changeLanguage from "stores/languageContent";
 
 const mapDispatchToProps = (dispatch) => ({
   setCookieInfoWindow: (popupOpen) =>
@@ -13,7 +13,7 @@ const mapStateToProps = (state) => {
   return { popupOpen: state.popupOpen };
 };
 
-function CookiesPolicyPopup(props) {
+const CookiesPolicyPopup = (props) => {
   const [open, setOpen] = useState(false);
 
   useEffect(() => {
@@ -127,6 +127,6 @@ function CookiesPolicyPopup(props) {
       </Dialog>
     </Transition.Root>
   );
-}
+};
 
 export default connect(mapStateToProps, mapDispatchToProps)(CookiesPolicyPopup);
