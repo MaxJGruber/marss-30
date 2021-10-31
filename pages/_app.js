@@ -9,6 +9,7 @@ import { TITLE, META_DESCRIPTION, META_IMAGE, URL } from "root/config";
 import store from "stores/store";
 import changeLanguage from "stores/languageContent";
 import "styles/globals.css";
+import * as gtag from "helpers/gtag";
 
 function App({ Component, pageProps }) {
   if (typeof window === undefined) {

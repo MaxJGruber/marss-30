@@ -14,3 +14,6 @@ export const META_DESCRIPTION = "Marss N30 : Coiffeur à Allemans du Dropt, 4780
 // The URL should be absolute, e.g.: https//www.domain.com/static/preview.jpg
 // Recommended size: 1200 x 627
 export const META_IMAGE = "./public/favicon.ico";
+
+// The Google Analytics tracking ID
+export const GA_TRACKING_ID = "G-043JCP2099";

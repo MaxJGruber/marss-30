@@ -18,7 +18,7 @@ const LandingPage = (props) => {
     event.preventDefault();
     props.setLanguage(event.target.value);
   };
-  
+
   const content = changeLanguage();
   return (
     <div id="landingpage" className="relative bg-white">
@@ -29,11 +29,9 @@ const LandingPage = (props) => {
               <div className="flex justify-between items-center py-2 md:justify-start md:space-x-10">
                 <div className="flex justify-start lg:w-0 lg:flex-1">
                   <a href="/" title="Home">
-                    <Image
+                    <img
                       className="h-10 w-auto sm:h-20 rounded-md logo"
-                      height={100}
-                      width={180}
-                      src="/static/marss_logo.png"
+                      src="static/marss_logo.png"
                       alt="logo Marss N30"
                     />
                   </a>

@@ -1,3 +1,4 @@
+import Link from "next/link";
 import AppMap from "./Map";
 import changeLanguage from "stores/languageContent";
 
@@ -6,8 +7,8 @@ const ContactInfo = () => (
     <h2 className="mb-5 text-5xl font-extrabold text-logo-amber sm:text-center">
       {changeLanguage().contactInfo.headline}
     </h2>
-    <div className="w-full max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8 lg:flex lg:items-center lg:justify-between">
-      <h2 className="text-3xl max-w-7xl font-extrabold text-gray-900 sm:text-4xl">
+    <div className="w-full max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8 grid sm:grid-cols-1 lg:grid-cols-3">
+      <h2 className="text-3xl max-w-7xl font-extrabold text-gray-900 sm:text-4xl flex flex-col items-center justify-center">
         <span className="block">{changeLanguage().contactInfo.open}</span>
         <span className="block text-3xl">
           {changeLanguage().contactInfo.weekTitle}
@@ -22,14 +23,14 @@ const ContactInfo = () => (
           {changeLanguage().contactInfo.satTimes}
         </span>
       </h2>
-      <div className="mt-8 lg:mt-0">
-        <div className="map-frame">
-          <div className="rounded-md map-container px-0 py-0">
+      <div className="mt-8 lg:mt-0 flex items-center justify-center">
+        <div className="rounded-md map-container px-0 py-0">
+          <div className="map-frame">
             <AppMap />
           </div>
         </div>
       </div>
-      <h2 className="text-3xl max-w-7xl font-extrabold text-gray-900 mt-5 sm:text-4xl">
+      <h2 className="text-3xl max-w-7xl font-extrabold text-gray-900 mt-5 sm:text-4xl flex flex-col items-center justify-center">
         <span className="block">{changeLanguage().contactInfo.address}</span>
         <span className="block text-logo-amber text-3xl">
           30 avenue de Miramont
@@ -38,15 +39,17 @@ const ContactInfo = () => (
         <span className="block text-logo-amber text-3xl">
           Allemans-du-Dropt
         </span>
-        <a
+        <Link
           href="https://www.google.fr/maps/place/30+Avenue+de+Miramont,+47800+Allemans-du-Dropt/@44.6277956,0.2895088,17z/data=!3m1!4b1!4m5!3m4!1s0x12aa94a8f144786b:0x3d55a626d8c6d00f!8m2!3d44.6277918!4d0.2916975"
           target="_blank"
           rel="noreferrer"
           title="google maps link"
-          className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-logo-white bg-amber-600 hover:bg-amber-300 hover:text-gray-900 md:py-4 md:text-lg md:px-10"
+          passHref
         >
-          {changeLanguage().contactInfo.directionsButton}
-        </a>
+          <a className="w-1/2 flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-logo-white bg-amber-600 hover:bg-amber-300 hover:text-gray-900 md:py-4 md:text-lg md:px-10">
+            {changeLanguage().contactInfo.directionsButton}
+          </a>
+        </Link>
       </h2>
     </div>
   </div>
