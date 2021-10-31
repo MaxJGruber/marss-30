@@ -1,8 +1,8 @@
-import { CheckIcon } from "@heroicons/react/outline";
 import { useState, useEffect } from "react";
 import { connect } from "react-redux";
-import store from "../redux/store";
-import changeLanguage from "../redux/languageContent";
+import { CheckIcon } from "@heroicons/react/outline";
+import store from "stores/store";
+import changeLanguage from "stores/languageContent";
 
 const mapDispatchToProps = (dispatch) => ({
   setCookiesAuth: (cookiesAuth) =>

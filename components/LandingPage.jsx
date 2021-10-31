@@ -2,10 +2,10 @@ import { Fragment } from "react";
 import { Popover, Transition } from "@headlessui/react";
 import { MenuIcon, XIcon } from "@heroicons/react/outline";
 import { connect } from "react-redux";
-import introPic from "../Assets/homepage_pic.jpg";
-import logo from "../Assets/marss_logo.png";
-import goToSection from "../GoToSection";
-import changeLanguage from "../redux/languageContent";
+import introPic from "static/homepage_pic.jpg";
+import logo from "static/marss_logo.png";
+import goToSection from "helpers/GoToSection";
+import changeLanguage from "stores/languageContent";
 
 const mapDispatchToProps = (dispatch) => ({
   setLanguage: (language) => dispatch({ type: "SET_LANGUAGE", language }),

@@ -1,4 +1,4 @@
-import changeLanguage from "../redux/languageContent";
+import changeLanguage from "stores/languageContent";
 
 export default function Faq() {
   return (

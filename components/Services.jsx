@@ -1,7 +1,7 @@
-import adultCut from "../Assets/adult_cut.jpeg";
-import childCut from "../Assets/child_cut.jpeg";
-import sponsorLogo from "../Assets/sponsor_logo.png";
-import changeLanguage from "../redux/languageContent.js";
+import adultCut from "static/adult_cut.jpeg";
+import childCut from "static/child_cut.jpeg";
+import sponsorLogo from "static/sponsor_logo.png";
+import changeLanguage from "stores/languageContent";
 
 export default function Services() {
   return (

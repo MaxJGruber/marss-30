@@ -1,5 +1,5 @@
-import goToSection from "../GoToSection";
-import changeLanguage from "../redux/languageContent";
+import goToSection from "helpers/GoToSection";
+import changeLanguage from "stores/languageContent";
 
 export default function Footer() {
   return (

@@ -2,8 +2,8 @@ import { Fragment, useState, useEffect } from "react";
 import { Dialog, Transition } from "@headlessui/react";
 import { DatabaseIcon } from "@heroicons/react/outline";
 import { connect } from "react-redux";
-import store from "../redux/store";
-import changeLanguage from "../redux/languageContent";
+import store from "stores/store";
+import changeLanguage from "stores/languageContent";
 
 const mapDispatchToProps = (dispatch) => ({
   setCookieInfoWindow: (popupOpen) =>

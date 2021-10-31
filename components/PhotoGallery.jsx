@@ -1,10 +1,7 @@
-import photo1 from "../Assets/PhotoGallery_Pics/photo1.jpeg";
-import photo2 from "../Assets/PhotoGallery_Pics/photo2.jpeg";
-import photo3 from "../Assets/PhotoGallery_Pics/photo3.jpeg";
-// import photo4 from "../Assets/PhotoGallery_Pics/photo4.jpeg";
-// import photo5 from "../Assets/PhotoGallery_Pics/photo5.jpeg";
-// import photo6 from "../Assets/PhotoGallery_Pics/photo6.jpeg";
-import changeLanguage from "../redux/languageContent.js";
+import photo1 from "static/PhotoGallery_Pics/photo1.jpeg";
+import photo2 from "static/PhotoGallery_Pics/photo2.jpeg";
+import photo3 from "static/PhotoGallery_Pics/photo3.jpeg";
+import changeLanguage from "stores/languageContent";
 
 const images = [
   {
@@ -22,18 +19,7 @@ const images = [
     imageUrl: photo3,
     alt: "blond boy after haircut",
   },
-  // {
-  //   index: 4,
-  //   imageUrl: photo4,
-  // },
-  // {
-  //   index: 5,
-  //   imageUrl: photo5,
-  // },
-  // {
-  //   index: 6,
-  //   imageUrl: photo6,
-  // },
+
   // More people...
 ];
 
